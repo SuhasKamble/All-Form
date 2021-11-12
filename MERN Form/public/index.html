@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Template</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Registration Form</h2>
+        </div>
+        <div class="form-body">
+            <form>
+                <div class="input-field">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="you@domain.com">
+                </div>
+
+                <div class="input-field">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" placeholder="Your phone number here"> 
+                </div>
+                
+                <div class="input-field">
+                    <label for="gender">Gender</label>
+                    <input type="text" name="gender" id="gender" placeholder="your gender here">
+                </div>
+                
+                <div class="input-field">
+                    <label for="msg">Message</label>
+                    <textarea name="msg" id="msg"></textarea>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

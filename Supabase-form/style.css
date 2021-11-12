@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    padding: 2rem 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+header{
+    min-height: 100vh;
+    background-color: #231E36;
+    color: #fff;
+}
+
+.header-content{
+    padding: 6rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.header-left h1{
+    font-size: 2.3rem;
+    line-height: 1.4;
+}
+
+.header-left p{
+    margin: 1rem 0;
+    width: 500px;
+}
+
+
+.btn{
+    padding: 10px 2.2rem;
+    background-color: #4D2EBC;
+    display: inline-block;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form{
+    padding: 2rem 1.7rem;
+    background-color: #1C172E;
+}
+
+.form-title{
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.form input, .form textarea{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: #6D677D;
+    color: #fff;
+}
+
+.form input::placeholder , .form textarea::placeholder{
+    color: rgb(202, 202, 202);
+}
+
+@media screen and (max-width:780px) {
+    nav{
+        padding: 1rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .header-left{
+        text-align: center;
+    }
+    .header-left h1{
+        font-size: 1.8rem;
+    }
+    .header-content{
+        padding: 2rem 1rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
